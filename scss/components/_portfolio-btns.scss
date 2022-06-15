@@ -1,0 +1,49 @@
+.portfolio-button-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.filter-button {
+    min-width: 73px;
+    min-height: 38px;
+    max-width: 150px;
+
+    padding: 6px 22px;
+    text-align: center;
+
+    background-color: var(--third-background-color);
+    border: 0px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: currentColor;
+    cursor: pointer;
+
+    transition: color var(--amination), background-color var(--amination), box-shadow var(--amination),
+        border-radius var(--amination);
+
+    &:hover,
+    &:focus {
+        color: var(--main-button-text-color);
+        background-color: var(--main-hover-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+
+}
+
+.portfolio-buttons {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
