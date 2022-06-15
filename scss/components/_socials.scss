@@ -1,0 +1,39 @@
+/* social links icons */
+
+.social {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-icon-color);
+    transition: background-color var(--amination);
+
+    &:hover,
+    &:focus {
+    background-color: var(--main-hover-color);
+    }
+
+    &:hover .social__icon,
+    &:focus .social__icon {
+    fill: var(--main-button-text-color);
+    }
+
+}
+
+.social__icon {
+    transition: fill var(--amination);
+}
+

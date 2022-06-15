@@ -1,0 +1,10 @@
+.modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-background-color);
+    width: 528px;
+    border-radius: 4px;
+    padding: 40px;
+}

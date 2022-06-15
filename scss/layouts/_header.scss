@@ -1,0 +1,145 @@
+/*~~~~~~~~~~~~
+header styles 
+~~~~~~~~~~~~~*/
+
+.header {
+    background-color: var(--main-background-color);
+    list-style-type: none;
+    border-bottom: 1px solid var(--head-border-line-color);
+    align-items: center;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+
+/*  navigation header part  */
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.navigation__item {
+    margin-right: 50px;
+
+&:last-child {
+    margin-right: 0;
+    }
+}
+
+
+.navigation__link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: currentColor;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    position: relative;
+    transition: color var(--amination);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+
+/* class current */
+
+.navigation__link--current {
+    color: var(--heroic-button-hover);
+
+&::after {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--main-hover-color);
+    }
+}
+
+
+
+
+/* header contacts */
+
+.header__contacts {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header__contact {
+    margin-right: 50px;
+
+&:last-child {
+    margin-right: 0;
+    }
+}
+
+
+.header__link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    transition: color var(--amination);
+
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+
+    &:hover .header__mail,
+    &:focus .header__mail,
+    &:hover .header__phone,
+    &:focus .header__phone {
+        fill: var(--main-hover-color);
+    }
+}
+
+.header__mail {
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+}
+
+.header__phone {
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+}
+
+.header__mail,
+.header__phone {
+    transition: fill var(--amination);
+}

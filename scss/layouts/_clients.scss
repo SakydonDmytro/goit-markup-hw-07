@@ -1,0 +1,66 @@
+/*~~~~~~~~~~~ 
+Clients styles 
+~~~~~~~~~~~~*/
+
+.clients__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-icon-color);
+    border-radius: 4px;
+    transition: border, border-radius var(--amination);
+
+    &:hover .client__ico,
+    &:focus .client__ico {
+
+        fill: var(--main-hover-color);
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--main-hover-color);
+        border-radius: 4px;
+    }
+}
+
+.client__ico {
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-icon-color);
+    transition: fill var(--amination);
+}
+
+
+
